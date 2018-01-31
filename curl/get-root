@@ -1,0 +1,2 @@
+curl -X GET 'https://sandbox.xill.io/v2/entities?scope=children' \
+  -H "Authorization: Bearer $1"
