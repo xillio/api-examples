@@ -1,0 +1,16 @@
+{
+  "name": "xillio-api-examples",
+  "version": "1.0.0",
+  "description": "Example javascript code for the usage of the Xillio API",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeroen Huinink",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
