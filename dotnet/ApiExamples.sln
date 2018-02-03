@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingHeaders", "PingHeaders\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{67B30D01-ECC8-4073-B247-C07043FCC454}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetToken", "GetToken\GetToken.csproj", "{A9E83328-4E90-477D-9FC8-0632F19B2B1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{67B30D01-ECC8-4073-B247-C07043FCC454}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67B30D01-ECC8-4073-B247-C07043FCC454}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67B30D01-ECC8-4073-B247-C07043FCC454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
