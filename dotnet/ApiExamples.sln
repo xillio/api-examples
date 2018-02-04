@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetToken", "GetToken\GetToken.csproj", "{A9E83328-4E90-477D-9FC8-0632F19B2B1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetRoot", "GetRoot\GetRoot.csproj", "{35A42E02-E6E7-4D67-BDA5-8194DA99BBEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9E83328-4E90-477D-9FC8-0632F19B2B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A42E02-E6E7-4D67-BDA5-8194DA99BBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A42E02-E6E7-4D67-BDA5-8194DA99BBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A42E02-E6E7-4D67-BDA5-8194DA99BBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A42E02-E6E7-4D67-BDA5-8194DA99BBEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
