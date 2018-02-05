@@ -17,23 +17,23 @@ function createObject(token, parentId, name) {
             }
         }
     };
-    return request(
-        {
-            method: 'POST',
-            uri: parentId + "?scope=entity",
-            headers: {
-                'Authorization': 'Bearer ' + token,
-            },
-            json: object
-        })
+    return request({
+        method: 'POST',
+        uri: parentId + "?scope=entity",
+        headers: {
+            'Authorization': 'Bearer ' + token,
+        },
+        json: object
+    })
 }
 
 function getContents(token, id) {
     var entityRegEx = /^((http[s]?|ftp):\/?\/?[^:\/\s]+)\/v2\/entities((\/\w+)*\/[\w\-\.]+[^#?\s]+)$/;
     var matches = id.match(entityRegEx);
-    var contentsId = matches[1] + '/v2/contents' + matches[3];
+    var id = matches[1] + '/v2/contents' + matches[3];
     return request({
-        uri: contentsId,
+        method: 'GET',
+        uri: id,
         headers: {
             'Authorization': 'Bearer ' + token
         }
@@ -84,15 +84,14 @@ function createContainer(token, parentId, name) {
             }
         }
     };
-    return request(
-        {
-            method: 'POST',
-            uri: parentId + "?scope=entity,children",
-            headers: {
-                'Authorization': 'Bearer ' + token,
-            },
-            json: container
-        })
+    return request({
+        method: 'POST',
+        uri: parentId + "?scope=entity,children",
+        headers: {
+            'Authorization': 'Bearer ' + token,
+        },
+        json: container
+    })
 }
 
 function getContainerById(token, id) {
@@ -107,6 +106,7 @@ function getContainerById(token, id) {
 
 function getObjectById(token, id) {
     return request({
+        method: 'GET',
         uri: id,
         headers: {
             'Authorization': 'Bearer ' + token
@@ -116,13 +116,8 @@ function getObjectById(token, id) {
 }
 
 function getConfigurations(tenant, token) {
-    return request({
-        uri: 'https://' + tenant + '/v2/entities?scope=children',
-        headers: {
-            'Authorization': 'Bearer ' + token
-        },
-        json: true,
-    })
+    const id = 'https://' + tenant + '/v2/entities?scope=children';
+    return getObjectById(token, id);
 }
 
 function getConfigurationIdByName(tenant, token, name) {
